@@ -7,6 +7,10 @@
 # All rights reserved - Do Not Redistribute
 #
 
+firewall 'default' do
+  action :enable
+end
+
 firewall_rule 'open_http' do
   port 80
   action :allow
